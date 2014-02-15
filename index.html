@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+	Hello PhoneGap
+    </title>    
+</head>
+    <body>
+        <button id="btnSubmit">Submit</button>
+	<button id="btnClear">Clear</button>
+	<div id="results"></div>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/utilities.js"></script>
+	<script>
+	    $('#btnSubmit').click(function() {	
+	        MYMODULE.Go($('#results'));
+	    });
+	    $('#btnClear').click(function() {	
+	        $('#results').html('');
+	    });
+	</script>
+    </body>
+</html>
